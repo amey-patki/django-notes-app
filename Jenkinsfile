@@ -12,7 +12,7 @@ pipeline {
             steps {
                 echo "Building the image"
                 sh "cat Dockerfile"
-                sh "docker build -t my-note-app ."
+               /* sh "docker build -t my-note-app ."*/
             }
         }
         stage("Push to Docker Hub"){
