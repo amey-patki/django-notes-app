@@ -11,8 +11,7 @@ pipeline {
         stage("Build"){
             steps {
                 echo "Building the image"
-                sh "pwd"
-                sh "ls"
+                sh "cat Dockerfile"
                 sh "docker build -t my-note-app ."
             }
         }
