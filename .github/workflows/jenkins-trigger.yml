@@ -6,6 +6,6 @@ jobs:
   trigger:
     runs-on: self-hosted
     steps:
-      - name: Trigger Jenkins Job
+      - name: Trigger Jenkins Jobs
         run: |
           curl -X POST http://3.90.212.36:8080/job/note-app/build
